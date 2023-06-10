@@ -1,0 +1,13 @@
+.select{
+border: 1px solid black;
+}
+
+.items{
+    position: absolute;
+    padding: 5px;
+    border: 1px solid black;
+}
+.item.selected {
+    background-color: #1ea7fd ;
+    color: white;
+}
