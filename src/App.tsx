@@ -2,12 +2,16 @@ import React, {useState} from 'react';
 import './App.css';
 import {RattingValueType} from "./components/Rating/Rating";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UsersSecret} from "./Memo/UseMemo";
+import {Example1} from "./Memo/UseState";
+import {SetTimeoutExample, SimpleExample} from "./Memo/UseEffect";
 
 function sum(a: number, b: number) {
     alert(a + b)
 }
 
 /*sum(23, 12);*/
+
 
 function App() {
     console.log("App rendering")
@@ -22,13 +26,19 @@ function App() {
 
     return (
         <div className={"App"}>
-            {/*   <OnOff on={switchOn} onChange={setSwitchOn}/>*/}
+            <SetTimeoutExample/>
+
+
+
+
+
+
+
+
             {/*<UncontrolledOnOff onChange={setSwitchOn}/>{switchOn.toString()}*/}
-
-            <UncontrolledAccordion titleValue={"Menu"}/>
-           {/* <UncontrolledRating/>*/}
-
-
+            {/*   <OnOff on={switchOn} onChange={setSwitchOn}/>*/}
+            {/* <UncontrolledRating/>*/}
+            {/*<DifficultCountingExample/>*/}
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<Accordion titleValue={"Menu"}
                        collapsed={accordionCollapsed}
@@ -41,9 +51,7 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>*/}
-
-
-           {/* <Select onChange={setValue}
+            {/* <Select onChange={setValue}
                     value={value}
                     items={[
                         {value: "1", title: "Minsk"},
